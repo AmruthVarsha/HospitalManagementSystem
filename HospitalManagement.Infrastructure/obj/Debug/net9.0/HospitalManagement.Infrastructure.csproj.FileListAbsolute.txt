@@ -15,3 +15,4 @@ D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\bin
 D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\bin\Debug\net9.0\HospitalManagement.Domain.pdb
 D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\obj\Debug\net9.0\Hospital.04B4BFA6.Up2Date
 D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\obj\Debug\net9.0\HospitalManagement.Infrastructure.genruntimeconfig.cache
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\obj\Debug\net9.0\HospitalManagement.Infrastructure.sourcelink.json

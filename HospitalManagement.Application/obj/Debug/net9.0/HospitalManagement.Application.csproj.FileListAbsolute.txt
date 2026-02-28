@@ -13,3 +13,6 @@ D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Application\obj\De
 D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Application\obj\Debug\net9.0\refint\HospitalManagement.Application.dll
 D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Application\obj\Debug\net9.0\HospitalManagement.Application.pdb
 D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Application\obj\Debug\net9.0\ref\HospitalManagement.Application.dll
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Application\obj\Debug\net9.0\HospitalManagement.Application.sourcelink.json
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Application\bin\Debug\net9.0\HospitalManagement.Infrastructure.dll
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Application\bin\Debug\net9.0\HospitalManagement.Infrastructure.pdb

@@ -1,0 +1,69 @@
+28-02-2026 16:11:30 Doctor id is already in use    at HospitalManagement.Application.Services.DoctorService.AddDoctor(Doctor doctor) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Application\Services\DoctorService.cs:line 39
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 45
+28-02-2026 16:12:32 invalid doctor id, doctor not found    at HospitalManagement.Application.Services.PatientService.AddPatient(Patient patient) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Application\Services\PatientService.cs:line 29
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 79
+28-02-2026 16:12:50 The input string 'Ranjan' was not in a correct format.    at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 32
+28-02-2026 16:17:02 The input string '' was not in a correct format.    at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Double.Parse(String s)
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 44
+28-02-2026 19:27:29 The input string '' was not in a correct format.    at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Double.Parse(String s)
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 44
+28-02-2026 19:27:42 The input string 'f' was not in a correct format.    at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Double.Parse(String s)
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 44
+28-02-2026 19:28:05 Doctor id cannot be empty    at HospitalManagement.Application.Services.DoctorService.AddDoctor(Doctor doctor) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Application\Services\DoctorService.cs:line 21
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 45
+28-02-2026 19:28:13 Doctor name cannot be empty    at HospitalManagement.Application.Services.DoctorService.AddDoctor(Doctor doctor) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Application\Services\DoctorService.cs:line 25
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 45
+28-02-2026 19:29:36 The input string '' was not in a correct format.    at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Double.Parse(String s)
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 44
+28-02-2026 19:30:08 The input string '' was not in a correct format.    at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Double.Parse(String s)
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 44
+28-02-2026 19:35:17 The input string '' was not in a correct format.    at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Double.Parse(String s)
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 44
+28-02-2026 19:37:57 The input string '' was not in a correct format.    at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Double.Parse(String s)
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 44
+28-02-2026 19:38:01 The input string '' was not in a correct format.    at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Double.Parse(String s)
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 44
+28-02-2026 19:47:05 The input string '' was not in a correct format.    at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Double.Parse(String s)
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 45
+
+=========================================
+
+28-02-2026 19:47:06 No doctors to display.    at HospitalManagement.Application.Services.DoctorService.GetDoctors() in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Application\Services\DoctorService.cs:line 55
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 53
+
+=========================================
+
+28-02-2026 19:47:10 The input string '' was not in a correct format.    at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 66
+
+=========================================
+
+28-02-2026 19:47:10 The input string '' was not in a correct format.    at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 33
+
+=========================================
+
+28-02-2026 19:47:12 The input string '' was not in a correct format.    at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 33
+
+=========================================
+
+28-02-2026 19:54:12 No patients to display.    at HospitalManagement.Application.Services.PatientService.GetAllPatients() in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Application\Services\PatientService.cs:line 54
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 95
+
+=========================================
+

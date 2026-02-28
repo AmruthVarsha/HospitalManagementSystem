@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{5354B6D4-0DC4-B375-7925-DACD4A991596}|HospitalManagement.ConsoleApp\\HospitalManagement.ConsoleApp.csproj|d:\\.net\\project\\hospitalmanagementsolution\\hospitalmanagement.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5354B6D4-0DC4-B375-7925-DACD4A991596}|HospitalManagement.ConsoleApp\\HospitalManagement.ConsoleApp.csproj|solutionrelative:hospitalmanagement.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BB6AD29-45E6-2E42-8538-E3D5E6881780}|HospitalManagement.Infrastructure\\HospitalManagement.Infrastructure.csproj|d:\\.net\\project\\hospitalmanagementsolution\\hospitalmanagement.infrastructure\\logging\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BB6AD29-45E6-2E42-8538-E3D5E6881780}|HospitalManagement.Infrastructure\\HospitalManagement.Infrastructure.csproj|solutionrelative:hospitalmanagement.infrastructure\\logging\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +18,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
@@ -28,22 +36,23 @@
               "RelativeDocumentMoniker": "HospitalManagement.ConsoleApp\\Program.cs",
               "ToolTip": "D:\\.NET\\Project\\HospitalManagementSolution\\HospitalManagement.ConsoleApp\\Program.cs",
               "RelativeToolTip": "HospitalManagement.ConsoleApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAcwEYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T05:28:45.8Z",
+              "WhenOpened": "2026-02-28T14:08:29.272Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "D:\\.NET\\Project\\HospitalManagementSolution\\HospitalManagement.Infrastructure\\Logging\\Logger.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.Infrastructure\\Logging\\Logger.cs",
+              "ToolTip": "D:\\.NET\\Project\\HospitalManagementSolution\\HospitalManagement.Infrastructure\\Logging\\Logger.cs",
+              "RelativeToolTip": "HospitalManagement.Infrastructure\\Logging\\Logger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-28T13:59:07.782Z",
+              "EditorCaption": ""
             }
           ]
         }

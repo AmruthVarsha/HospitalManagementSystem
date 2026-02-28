@@ -1,0 +1,17 @@
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\bin\Debug\net9.0\HospitalManagement.Infrastructure.deps.json
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\bin\Debug\net9.0\HospitalManagement.Infrastructure.dll
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\bin\Debug\net9.0\HospitalManagement.Infrastructure.pdb
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\obj\Debug\net9.0\HospitalManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\obj\Debug\net9.0\HospitalManagement.Infrastructure.AssemblyInfoInputs.cache
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\obj\Debug\net9.0\HospitalManagement.Infrastructure.AssemblyInfo.cs
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\obj\Debug\net9.0\HospitalManagement.Infrastructure.csproj.CoreCompileInputs.cache
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\obj\Debug\net9.0\HospitalManagement.Infrastructure.dll
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\obj\Debug\net9.0\refint\HospitalManagement.Infrastructure.dll
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\obj\Debug\net9.0\HospitalManagement.Infrastructure.pdb
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\obj\Debug\net9.0\ref\HospitalManagement.Infrastructure.dll
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\obj\Debug\net9.0\HospitalManagement.Infrastructure.csproj.AssemblyReference.cache
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\bin\Debug\net9.0\HospitalManagement.Infrastructure.runtimeconfig.json
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\bin\Debug\net9.0\HospitalManagement.Domain.dll
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\bin\Debug\net9.0\HospitalManagement.Domain.pdb
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\obj\Debug\net9.0\Hospital.04B4BFA6.Up2Date
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\obj\Debug\net9.0\HospitalManagement.Infrastructure.genruntimeconfig.cache

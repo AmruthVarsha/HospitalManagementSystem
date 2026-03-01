@@ -12,15 +12,17 @@ namespace HospitalManagement.Application.Services
 {
     public class DoctorService : IDoctorService
     {
-        private DoctorRepositoryMemory DoctorRepository = new DoctorRepositoryMemory();
+        //private DoctorRepositoryMemory DoctorRepository = new DoctorRepositoryMemory();
+        private DoctorRepositoryADO DoctorRepository;
+
+        public DoctorService(string connectionString)
+        {
+            DoctorRepository = new DoctorRepositoryADO(connectionString);
+        }
 
         public bool AddDoctor(Doctor doctor)
         {
-            if (string.IsNullOrEmpty(doctor.DoctorId))
-            {
-                throw new InvalidDoctorException("Doctor id cannot be empty");
-            }
-            else if (string.IsNullOrEmpty(doctor.Name))
+            if (string.IsNullOrEmpty(doctor.Name))
             {
                 throw new InvalidDoctorException("Doctor name cannot be empty");
             }

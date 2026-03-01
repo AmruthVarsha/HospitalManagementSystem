@@ -13,6 +13,6 @@ namespace HospitalManagement.Domain.Interfaces
         public List<Patient> GetAllPatients();
         public Patient FindPatientByName(string name);
         public bool EditPatient(Patient patient);
-        public bool DeletePatient(string patientId);
+        public bool DeletePatient(int patientId);
     }
 }

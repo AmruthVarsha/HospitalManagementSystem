@@ -12,15 +12,22 @@ namespace HospitalManagement.Application.Services
 {
     public class PatientService : IPatientService
     {
-        private PatientRepositoryMemory PatientRepository = new PatientRepositoryMemory();
-        private DoctorRepositoryMemory DoctorRepository = new DoctorRepositoryMemory();
+        //private PatientRepositoryMemory PatientRepository = new PatientRepositoryMemory();
+        //private DoctorRepositoryMemory DoctorRepository = new DoctorRepositoryMemory();
+
+        private DoctorRepositoryADO DoctorRepository;
+        private PatientRepositoryADO PatientRepository;
+
+        public PatientService(string connectionString)
+        {
+            DoctorRepository = new DoctorRepositoryADO(connectionString);
+            PatientRepository = new PatientRepositoryADO(connectionString);
+        }
+
         public bool AddPatient(Patient patient)
         {
-            if(string.IsNullOrEmpty(patient.PatientId ))
-            {
-                throw new InvalidPatientException("Patient id cannot be empty");
-            }
-            else if (patient.Age <= 0)
+
+            if (patient.Age <= 0)
             {
                 throw new InvalidPatientException("Patient age must be a positive integer.");
             }
@@ -69,10 +76,6 @@ namespace HospitalManagement.Application.Services
 
         public bool EditPatient(Patient patient)
         {
-            if (string.IsNullOrEmpty(patient.PatientId))
-            {
-                throw new InvalidPatientException("Patient id cannot be empty");
-            }
 
             Patient hasPatient = PatientRepository.GetById(patient.PatientId);
 
@@ -98,7 +101,7 @@ namespace HospitalManagement.Application.Services
             return true;
         }
 
-        public bool DeletePatient(string patientId)
+        public bool DeletePatient(int patientId)
         {
             Patient patient = PatientRepository.GetById(patientId);
             if (patient == null)

@@ -23,7 +23,7 @@ namespace HospitalManagement.Infrastructure.Repositories
             return _doctors;
         }
 
-        public Doctor GetById(string id)
+        public Doctor GetById(int id)
         {
             Doctor doctor = _doctors.FirstOrDefault(d => d.DoctorId == id);
             return doctor;

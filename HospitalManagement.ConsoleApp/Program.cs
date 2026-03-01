@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using HospitalManagement.Domain.Entities;
 using HospitalManagement.Application.Services;
 using HospitalManagement.Infrastructure.Logging;
+using Microsoft.Data.SqlClient;
+using HospitalManagement.Domain.Exceptions;
 
 
 namespace HospitalManagement.ConsoleApp
@@ -13,8 +15,21 @@ namespace HospitalManagement.ConsoleApp
         static void Main(string[] args)
         {
             bool endLoop = false;
-            DoctorService doctorService = new DoctorService();
-            PatientService patientService = new PatientService();
+            
+            string connectionString = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=AppDB;Integrated Security=True;TrustServerCertificate=True";
+
+            try
+            {
+                SqlConnection connection = new SqlConnection(connectionString);
+            }
+            catch(DatabaseConnectionException e)
+            {
+                Console.WriteLine(e.Message);
+                Logger.Log(e);
+            }
+
+            DoctorService doctorService = new DoctorService(connectionString);
+            PatientService patientService = new PatientService(connectionString);
 
             while (!endLoop)
             {
@@ -37,8 +52,6 @@ namespace HospitalManagement.ConsoleApp
                         case 1:
                             Console.WriteLine("\n\n");
                             Doctor doctor = new Doctor();
-                            Console.Write("Enter doctor Id: ");
-                            doctor.DoctorId = Console.ReadLine();
                             Console.Write("Enter doctor Name: ");
                             doctor.Name = Console.ReadLine();
                             Console.Write("Enter doctor Specialization: ");
@@ -64,8 +77,6 @@ namespace HospitalManagement.ConsoleApp
                         case 3:
                             Console.WriteLine("\n\n");
                             Patient patient = new Patient();
-                            Console.Write("Enter patient Id: ");
-                            patient.PatientId = Console.ReadLine();
                             Console.Write("Enter patient Name: ");
                             patient.Name = Console.ReadLine();
                             Console.Write("Enter patient Age: ");
@@ -83,7 +94,7 @@ namespace HospitalManagement.ConsoleApp
                                 throw new FormatException("Wrong date format.");
                             }
                             Console.Write("Enter Doctor Id: ");
-                            patient.DoctorId = Console.ReadLine();
+                            patient.DoctorId = int.Parse(Console.ReadLine());
                             bool addedPatient = patientService.AddPatient(patient);
                             if (addedPatient)
                             {
@@ -123,7 +134,7 @@ namespace HospitalManagement.ConsoleApp
                             Console.WriteLine("\n\n");
                             Patient newPatient = new Patient();
                             Console.Write("Enter patient Id: ");
-                            newPatient.PatientId = Console.ReadLine();
+                            newPatient.PatientId = int.Parse(Console.ReadLine());
                             Console.Write("Enter patient Name: ");
                             newPatient.Name = Console.ReadLine();
                             Console.Write("Enter patient Age: ");
@@ -142,7 +153,7 @@ namespace HospitalManagement.ConsoleApp
                                 throw new FormatException("Wrong date format.");
                             }
                             Console.Write("Enter Doctor Id: ");
-                            newPatient.DoctorId = Console.ReadLine();
+                            newPatient.DoctorId = int.Parse(Console.ReadLine());
                             bool edited = patientService.EditPatient(newPatient);
                             if (edited)
                             {
@@ -153,7 +164,7 @@ namespace HospitalManagement.ConsoleApp
                         case 7:
                             Console.WriteLine("\n\n");
                             Console.Write("Enter patient id to delete: ");
-                            string patientId = Console.ReadLine();
+                            int patientId = int.Parse(Console.ReadLine());
                             bool deleted = patientService.DeletePatient(patientId);
                             if (deleted)
                             {

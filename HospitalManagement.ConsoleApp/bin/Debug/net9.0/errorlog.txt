@@ -108,3 +108,27 @@
 
 =========================================
 
+01-03-2026 19:18:24 Unable to cast object of type 'System.Decimal' to type 'System.Double'.    at Microsoft.Data.SqlClient.SqlBuffer.get_Double()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDouble(Int32 i)
+   at lambda_method7(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at HospitalManagement.Infrastructure.Repositories.DoctorRepositoryEF.GetAll() in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\Repositories\DoctorRepositoryEF.cs:line 21
+   at HospitalManagement.Application.Services.DoctorService.GetDoctors() in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Application\Services\DoctorService.cs:line 54
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 70
+
+=========================================
+
+01-03-2026 19:18:48 Unable to cast object of type 'System.Decimal' to type 'System.Double'.    at Microsoft.Data.SqlClient.SqlBuffer.get_Double()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDouble(Int32 i)
+   at lambda_method7(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at HospitalManagement.Infrastructure.Repositories.DoctorRepositoryEF.GetAll() in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\Repositories\DoctorRepositoryEF.cs:line 21
+   at HospitalManagement.Application.Services.DoctorService.GetDoctors() in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Application\Services\DoctorService.cs:line 54
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 70
+
+=========================================
+

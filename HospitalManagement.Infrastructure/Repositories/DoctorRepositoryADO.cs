@@ -39,7 +39,7 @@ namespace HospitalManagement.Infrastructure.Repositories
             List<Doctor> result = new List<Doctor>();
             while (reader.Read())
             {
-                result.Add(new Doctor() { DoctorId = Convert.ToInt32(reader[0]), Name = (string)reader[1], Specialization = (string)reader[2], ConsultationFee = Convert.ToDouble(reader[3]) });
+                result.Add(new Doctor() { DoctorId = Convert.ToInt32(reader[0]), Name = (string)reader[1], Specialization = (string)reader[2], ConsultationFee = Convert.ToDecimal(reader[3]) });
             }
             reader.Close();
             connection.Close();
@@ -58,7 +58,7 @@ namespace HospitalManagement.Infrastructure.Repositories
                 connection.Close();
                 return null;
             }
-            Doctor doctor = new Doctor() { DoctorId = Convert.ToInt32(reader[0]), Name = (string)reader[1], Specialization = (string)reader[2], ConsultationFee = Convert.ToDouble(reader[3]) };
+            Doctor doctor = new Doctor() { DoctorId = Convert.ToInt32(reader[0]), Name = (string)reader[1], Specialization = (string)reader[2], ConsultationFee = Convert.ToDecimal(reader[3]) };
             reader.Close();
             connection.Close();
             return doctor;

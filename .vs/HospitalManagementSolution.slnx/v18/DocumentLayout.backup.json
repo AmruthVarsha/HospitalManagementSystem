@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "D:\\.NET\\Project\\HospitalManagementSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5BB6AD29-45E6-2E42-8538-E3D5E6881780}|HospitalManagement.Infrastructure\\HospitalManagement.Infrastructure.csproj|d:\\.net\\project\\hospitalmanagementsolution\\hospitalmanagement.infrastructure\\repositories\\patientrepositoryado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BB6AD29-45E6-2E42-8538-E3D5E6881780}|HospitalManagement.Infrastructure\\HospitalManagement.Infrastructure.csproj|solutionrelative:hospitalmanagement.infrastructure\\repositories\\patientrepositoryado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5354B6D4-0DC4-B375-7925-DACD4A991596}|HospitalManagement.ConsoleApp\\HospitalManagement.ConsoleApp.csproj|d:\\.net\\project\\hospitalmanagementsolution\\hospitalmanagement.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5354B6D4-0DC4-B375-7925-DACD4A991596}|HospitalManagement.ConsoleApp\\HospitalManagement.ConsoleApp.csproj|solutionrelative:hospitalmanagement.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5BB6AD29-45E6-2E42-8538-E3D5E6881780}|HospitalManagement.Infrastructure\\HospitalManagement.Infrastructure.csproj|d:\\.net\\project\\hospitalmanagementsolution\\hospitalmanagement.infrastructure\\repositories\\doctorrepositoryado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BB6AD29-45E6-2E42-8538-E3D5E6881780}|HospitalManagement.Infrastructure\\HospitalManagement.Infrastructure.csproj|solutionrelative:hospitalmanagement.infrastructure\\repositories\\doctorrepositoryado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7EFCBAB-4EE3-C980-01D2-2ECD54CD4B9D}|HospitalManagement.Application\\HospitalManagement.Application.csproj|d:\\.net\\project\\hospitalmanagementsolution\\hospitalmanagement.application\\services\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7EFCBAB-4EE3-C980-01D2-2ECD54CD4B9D}|HospitalManagement.Application\\HospitalManagement.Application.csproj|solutionrelative:hospitalmanagement.application\\services\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5354B6D4-0DC4-B375-7925-DACD4A991596}|HospitalManagement.ConsoleApp\\HospitalManagement.ConsoleApp.csproj|d:\\.net\\project\\hospitalmanagementsolution\\hospitalmanagement.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5354B6D4-0DC4-B375-7925-DACD4A991596}|HospitalManagement.ConsoleApp\\HospitalManagement.ConsoleApp.csproj|solutionrelative:hospitalmanagement.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,24 +18,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PatientRepositoryADO.cs",
-              "DocumentMoniker": "D:\\.NET\\Project\\HospitalManagementSolution\\HospitalManagement.Infrastructure\\Repositories\\PatientRepositoryADO.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.Infrastructure\\Repositories\\PatientRepositoryADO.cs",
-              "ToolTip": "D:\\.NET\\Project\\HospitalManagementSolution\\HospitalManagement.Infrastructure\\Repositories\\PatientRepositoryADO.cs*",
-              "RelativeToolTip": "HospitalManagement.Infrastructure\\Repositories\\PatientRepositoryADO.cs*",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAowC8AAAAbAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\.NET\\Project\\HospitalManagementSolution\\HospitalManagement.ConsoleApp\\Program.cs",
+              "RelativeDocumentMoniker": "HospitalManagement.ConsoleApp\\Program.cs",
+              "ToolTip": "D:\\.NET\\Project\\HospitalManagementSolution\\HospitalManagement.ConsoleApp\\Program.cs*",
+              "RelativeToolTip": "HospitalManagement.ConsoleApp\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T06:27:24.969Z",
+              "WhenOpened": "2026-03-01T13:52:11.526Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Document",
@@ -53,36 +45,18 @@
               "RelativeDocumentMoniker": "HospitalManagement.Infrastructure\\Repositories\\DoctorRepositoryADO.cs",
               "ToolTip": "D:\\.NET\\Project\\HospitalManagementSolution\\HospitalManagement.Infrastructure\\Repositories\\DoctorRepositoryADO.cs",
               "RelativeToolTip": "HospitalManagement.Infrastructure\\Repositories\\DoctorRepositoryADO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwDwAAACzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T06:24:00.31Z",
+              "WhenOpened": "2026-03-01T13:51:28.711Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DoctorService.cs",
-              "DocumentMoniker": "D:\\.NET\\Project\\HospitalManagementSolution\\HospitalManagement.Application\\Services\\DoctorService.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.Application\\Services\\DoctorService.cs",
-              "ToolTip": "D:\\.NET\\Project\\HospitalManagementSolution\\HospitalManagement.Application\\Services\\DoctorService.cs",
-              "RelativeToolTip": "HospitalManagement.Application\\Services\\DoctorService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T06:23:04.165Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\.NET\\Project\\HospitalManagementSolution\\HospitalManagement.ConsoleApp\\Program.cs",
-              "RelativeDocumentMoniker": "HospitalManagement.ConsoleApp\\Program.cs",
-              "ToolTip": "D:\\.NET\\Project\\HospitalManagementSolution\\HospitalManagement.ConsoleApp\\Program.cs",
-              "RelativeToolTip": "HospitalManagement.ConsoleApp\\Program.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAQwEIAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T06:11:42.671Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }

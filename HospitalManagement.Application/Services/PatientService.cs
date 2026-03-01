@@ -15,13 +15,16 @@ namespace HospitalManagement.Application.Services
         //private PatientRepositoryMemory PatientRepository = new PatientRepositoryMemory();
         //private DoctorRepositoryMemory DoctorRepository = new DoctorRepositoryMemory();
 
-        private DoctorRepositoryADO DoctorRepository;
-        private PatientRepositoryADO PatientRepository;
+        private DoctorRepositoryADO DoctorRepositoryADO;
+        private PatientRepositoryADO PatientRepositoryADO;
+
+        private DoctorRepositoryEF DoctorRepository = new DoctorRepositoryEF();
+        private PatientRepositoryEF PatientRepository = new PatientRepositoryEF();
 
         public PatientService(string connectionString)
         {
-            DoctorRepository = new DoctorRepositoryADO(connectionString);
-            PatientRepository = new PatientRepositoryADO(connectionString);
+            DoctorRepositoryADO = new DoctorRepositoryADO(connectionString);
+            PatientRepositoryADO = new PatientRepositoryADO(connectionString);
         }
 
         public bool AddPatient(Patient patient)

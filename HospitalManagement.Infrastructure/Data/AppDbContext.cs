@@ -8,9 +8,22 @@ using HospitalManagement.Domain.Entities;
 
 namespace HospitalManagement.Infrastructure.Data
 {
-    internal class AppDbContext : DbContext
+    public class AppDbContext : DbContext
     {
-        DbSet<Doctor> Doctors { get; set; }
-        DbSet<Patient> Patients { get; set; }
+        public DbSet<Doctor> Doctors { get; set; }
+        public DbSet<Patient> Patients { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
+        {
+            optionBuilder.UseSqlServer(@"Data Source=localhost\SQLEXPRESS;Initial Catalog=AppDB;Integrated Security=True;TrustServerCertificate=True");
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Doctor>()
+                .HasMany<Patient>(d => d.Patients)
+                .WithOne(p => p.Doctor)
+                .HasForeignKey(p => p.DoctorId);
+        }
     }
 }

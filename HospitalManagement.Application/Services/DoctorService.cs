@@ -13,11 +13,12 @@ namespace HospitalManagement.Application.Services
     public class DoctorService : IDoctorService
     {
         //private DoctorRepositoryMemory DoctorRepository = new DoctorRepositoryMemory();
-        private DoctorRepositoryADO DoctorRepository;
+        private DoctorRepositoryADO DoctorRepositoryADO;
+        private DoctorRepositoryEF DoctorRepository = new DoctorRepositoryEF();
 
         public DoctorService(string connectionString)
         {
-            DoctorRepository = new DoctorRepositoryADO(connectionString);
+            DoctorRepositoryADO = new DoctorRepositoryADO(connectionString);
         }
 
         public bool AddDoctor(Doctor doctor)

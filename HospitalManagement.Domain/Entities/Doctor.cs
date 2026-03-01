@@ -11,6 +11,8 @@ namespace HospitalManagement.Domain.Entities
         public int DoctorId { get; set; }
         public string Name { get; set; }
         public string Specialization { get; set; }
-        public double ConsultationFee { get; set; }
+        public decimal ConsultationFee { get; set; }
+
+        public List<Patient> Patients { get; set; }
     }
 }

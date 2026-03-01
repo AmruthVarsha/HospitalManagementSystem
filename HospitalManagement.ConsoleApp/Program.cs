@@ -57,7 +57,7 @@ namespace HospitalManagement.ConsoleApp
                             Console.Write("Enter doctor Specialization: ");
                             doctor.Specialization = Console.ReadLine();
                             Console.Write("Enter Consultation fee: ");
-                            doctor.ConsultationFee = double.Parse(Console.ReadLine());
+                            doctor.ConsultationFee = decimal.Parse(Console.ReadLine());
                             bool addedDoctor = doctorService.AddDoctor(doctor);
                             if (addedDoctor)
                             {

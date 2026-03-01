@@ -14,5 +14,6 @@ namespace HospitalManagement.Domain.Entities
         public string Condition { get; set; }
         public DateTime AppointmentDate { get; set; }
         public int DoctorId { get; set; }
+        public Doctor Doctor { get; set; }
     }
 }

@@ -11,7 +11,12 @@ namespace HospitalManagement.Infrastructure.Repositories
 {
     public class PatientRepositoryEF : IRepository<Patient>
     {
-        private AppDbContext _context = new AppDbContext();
+        private readonly AppDbContext _context;
+
+        public PatientRepositoryEF(AppDbContext context)
+        {
+            _context = context;
+        }
 
         public void Add(Patient patient)
         {

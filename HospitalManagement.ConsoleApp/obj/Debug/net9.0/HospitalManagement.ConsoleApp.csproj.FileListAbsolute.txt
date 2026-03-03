@@ -69,3 +69,10 @@ D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\bin\Deb
 D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\bin\Debug\net9.0\HospitalManagement.Infrastructure.dll
 D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\bin\Debug\net9.0\HospitalManagement.Infrastructure.pdb
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\bin\Debug\net9.0\Microsoft.Extensions.Configuration.dll
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\bin\Debug\net9.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Json.dll
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Physical.dll
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\bin\Debug\net9.0\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\bin\Debug\net9.0\appsettings.json

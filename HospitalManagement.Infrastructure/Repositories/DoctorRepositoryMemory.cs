@@ -11,10 +11,12 @@ namespace HospitalManagement.Infrastructure.Repositories
 {
     public class DoctorRepositoryMemory : IRepository<Doctor>
     {
+        private static int Id=1;
         private static List<Doctor> _doctors = new List<Doctor>();
 
         public void Add(Doctor doctor)
         {
+            doctor.DoctorId = Id++;
             _doctors.Add(doctor);
         }
 

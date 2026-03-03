@@ -132,3 +132,54 @@
 
 =========================================
 
+03-03-2026 12:47:17 No database provider has been configured for this DbContext. A provider can be configured by overriding the 'DbContext.OnConfiguring' method or by using 'AddDbContext' on the application service provider. If 'AddDbContext' is used, then also ensure that your DbContext type accepts a DbContextOptions<TContext> object in its constructor and passes it to the base constructor for DbContext.    at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IEnumerable<TEntity>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at HospitalManagement.Infrastructure.Repositories.DoctorRepositoryEF.GetAll() in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\Repositories\DoctorRepositoryEF.cs:line 21
+   at HospitalManagement.Application.Services.DoctorService.GetDoctors() in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Application\Services\DoctorService.cs:line 52
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 92
+
+=========================================
+
+03-03-2026 12:49:10 The input string '' was not in a correct format.    at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Number.ParseDecimal[TChar](ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Decimal.Parse(String s)
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 82
+
+=========================================
+
+03-03-2026 12:49:13 No database provider has been configured for this DbContext. A provider can be configured by overriding the 'DbContext.OnConfiguring' method or by using 'AddDbContext' on the application service provider. If 'AddDbContext' is used, then also ensure that your DbContext type accepts a DbContextOptions<TContext> object in its constructor and passes it to the base constructor for DbContext.    at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IEnumerable<TEntity>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at HospitalManagement.Infrastructure.Repositories.DoctorRepositoryEF.GetAll() in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Infrastructure\Repositories\DoctorRepositoryEF.cs:line 21
+   at HospitalManagement.Application.Services.DoctorService.GetDoctors() in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Application\Services\DoctorService.cs:line 52
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 92
+
+=========================================
+
+03-03-2026 12:54:11 Object reference not set to an instance of an object.    at HospitalManagement.ConsoleApp.Program.Main(String[] args)
+
+=========================================
+
+03-03-2026 12:54:28 Object reference not set to an instance of an object.    at HospitalManagement.ConsoleApp.Program.Main(String[] args)
+
+=========================================
+
+03-03-2026 14:58:16 Doctor id is already in use    at HospitalManagement.Application.Services.DoctorService.AddDoctor(Doctor doctor) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.Application\Services\DoctorService.cs:line 40
+   at HospitalManagement.ConsoleApp.Program.AddDoctor(IDoctorService doctorService) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 152
+   at HospitalManagement.ConsoleApp.Program.Main(String[] args) in D:\.NET\Project\HospitalManagementSolution\HospitalManagement.ConsoleApp\Program.cs:line 85
+
+=========================================
+

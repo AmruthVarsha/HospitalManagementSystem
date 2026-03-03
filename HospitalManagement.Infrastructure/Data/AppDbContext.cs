@@ -10,13 +10,11 @@ namespace HospitalManagement.Infrastructure.Data
 {
     public class AppDbContext : DbContext
     {
+
         public DbSet<Doctor> Doctors { get; set; }
         public DbSet<Patient> Patients { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
-        {
-            optionBuilder.UseSqlServer(@"Data Source=localhost\SQLEXPRESS;Initial Catalog=AppDB;Integrated Security=True;TrustServerCertificate=True");
-        }
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

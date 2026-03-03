@@ -10,11 +10,14 @@ namespace HospitalManagement.Infrastructure.Repositories
 {
     public class PatientRepositoryMemory : IRepository<Patient>
     {
+        private static int Id = 1;
         private static List<Patient> _patients = new List<Patient>();
 
         public void Add(Patient patient)
         {
+            patient.PatientId = Id++;
             _patients.Add(patient);
+
         }
 
         public List<Patient> GetAll()

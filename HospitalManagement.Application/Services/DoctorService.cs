@@ -12,10 +12,9 @@ namespace HospitalManagement.Application.Services
 {
     public class DoctorService : IDoctorService
     {
-        //private DoctorRepositoryMemory DoctorRepository = new DoctorRepositoryMemory();
-        private readonly IRepository<Doctor> DoctorRepository;
+        private readonly IDoctorRepository DoctorRepository;
 
-        public DoctorService(IRepository<Doctor> doctorRepository){
+        public DoctorService(IDoctorRepository doctorRepository){
             DoctorRepository = doctorRepository;
         }
 
@@ -54,6 +53,16 @@ namespace HospitalManagement.Application.Services
             if (list.Count == 0)
             {
                 throw new DoctorNotFoundException("No doctors to display.");
+            }
+            return list;
+        }
+
+        public List<Doctor> SortDoctorsByFee()
+        {
+            List<Doctor> list = DoctorRepository.SortByFee();
+            if(list.Count == 0)
+            {
+                throw new DoctorNotFoundException("No Doctor Found");
             }
             return list;
         }

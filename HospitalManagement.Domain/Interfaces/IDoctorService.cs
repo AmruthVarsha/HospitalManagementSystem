@@ -11,5 +11,6 @@ namespace HospitalManagement.Domain.Interfaces
     {
         public bool AddDoctor(Doctor doctor);
         public List<Doctor> GetDoctors();
+        public List<Doctor> SortDoctorsByFee();
     }
 }

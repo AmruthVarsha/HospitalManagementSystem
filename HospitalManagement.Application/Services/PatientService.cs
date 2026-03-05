@@ -15,10 +15,10 @@ namespace HospitalManagement.Application.Services
         //private PatientRepositoryMemory PatientRepository = new PatientRepositoryMemory();
         //private DoctorRepositoryMemory DoctorRepository = new DoctorRepositoryMemory();
 
-        private readonly IRepository<Patient> PatientRepository;
+        private readonly IPatientRepository PatientRepository;
         private readonly IRepository<Doctor> DoctorRepository;
 
-        public PatientService(IRepository<Patient> patientRepository, IRepository<Doctor> doctorRepository)
+        public PatientService(IPatientRepository patientRepository, IRepository<Doctor> doctorRepository)
         {
             PatientRepository = patientRepository;
             DoctorRepository = doctorRepository;
@@ -63,17 +63,26 @@ namespace HospitalManagement.Application.Services
             return list;
         }
 
-        public Patient FindPatientByName(string name)
+        public List<Patient> FindPatientByName(string name)
         {
-            List<Patient> patients = PatientRepository.GetAll();
-            Patient patient = patients.FirstOrDefault(p => p.Name.ToLower() == name.ToLower());
-            if (patient == null)
+            List<Patient> patients = PatientRepository.GetByName(name);
+            if (patients.Count==0)
             {
                 throw new PatientNotFoundException($"Patient with name: {name} not found.");
             }
-            return patient;
+            return patients;
         }
 
+        public List<Patient> GetPatientByDoctorId(int doctorId)
+        {
+            List<Patient> patients = PatientRepository.GetPatientByDoctor(doctorId);
+            if(patients.Count==0)
+            {
+                throw new PatientNotFoundException($"Patient with Doctor id: {doctorId} not found.");
+            }
+
+            return patients;
+        }
         public bool EditPatient(Patient patient)
         {
 

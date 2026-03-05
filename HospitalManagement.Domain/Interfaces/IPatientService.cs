@@ -11,7 +11,8 @@ namespace HospitalManagement.Domain.Interfaces
     {
         public bool AddPatient(Patient patient);
         public List<Patient> GetAllPatients();
-        public Patient FindPatientByName(string name);
+        public List<Patient> FindPatientByName(string name);
+        public List<Patient> GetPatientByDoctorId(int doctorId);
         public bool EditPatient(Patient patient);
         public bool DeletePatient(int patientId);
     }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace HospitalManagement.Infrastructure.Repositories
 {
-    public class DoctorRepositoryMemory : IRepository<Doctor>
+    public class DoctorRepositoryMemory : IDoctorRepository
     {
         private static int Id=1;
         private static List<Doctor> _doctors = new List<Doctor>();
@@ -46,6 +46,11 @@ namespace HospitalManagement.Infrastructure.Repositories
         public void Delete(Doctor doctor)
         {
             _doctors.Remove(doctor);
+        }
+
+        public List<Doctor> SortByFee()
+        {
+            return _doctors.OrderBy(d => d.ConsultationFee).ToList();
         }
     }
 }

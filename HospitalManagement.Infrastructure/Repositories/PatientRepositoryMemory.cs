@@ -1,14 +1,15 @@
-﻿using System;
+﻿using HospitalManagement.Domain.Entities;
+using HospitalManagement.Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HospitalManagement.Domain.Entities;
-using HospitalManagement.Domain.Interfaces;
 
 namespace HospitalManagement.Infrastructure.Repositories
 {
-    public class PatientRepositoryMemory : IRepository<Patient>
+    public class PatientRepositoryMemory : IPatientRepository
     {
         private static int Id = 1;
         private static List<Patient> _patients = new List<Patient>();
@@ -46,5 +47,17 @@ namespace HospitalManagement.Infrastructure.Repositories
         {
             _patients.Remove(patient);
         }
+
+        public List<Patient> GetByName(string name)
+        {
+            return _patients.Where(p => p.Name.ToLower() == name.ToLower()).ToList();
+        }
+
+        public List<Patient> GetPatientByDoctor(int doctorId)
+        {
+            return _patients.Where(p => p.DoctorId== doctorId).ToList();
+        }
+
+
     }
 }

@@ -6,10 +6,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace HospitalManagement.Infrastructure.Repositories
 {
-    public class PatientRepositoryEF : IRepository<Patient>
+    public class PatientRepositoryEF : IPatientRepository
     {
         private readonly AppDbContext _context;
 
@@ -26,11 +27,7 @@ namespace HospitalManagement.Infrastructure.Repositories
 
         public List<Patient> GetAll()
         {
-            List<Patient> result = _context.Patients.ToList();
-            if (result.Count == 0)
-            {
-                return null;
-            }
+            List<Patient> result = _context.Patients.Include(p => p.Doctor).ToList();
             return result;
         }
 
@@ -51,5 +48,16 @@ namespace HospitalManagement.Infrastructure.Repositories
             _context.Patients.Remove(patient);
             _context.SaveChanges();
         }
+
+        public List<Patient> GetByName(string name)
+        {
+            return _context.Patients.Where(p => p.Name.ToLower() == name.ToLower()).ToList();
+        }
+
+        public List<Patient> GetPatientByDoctor(int doctorId)
+        {
+            return _context.Patients.Where(p => p.DoctorId == doctorId).ToList();
+        }
+
     }
 }

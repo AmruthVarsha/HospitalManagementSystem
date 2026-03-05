@@ -42,8 +42,8 @@ namespace HospitalManagement.ConsoleApp
 
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
 
-            services.AddScoped<IRepository<Doctor>, DoctorRepositoryEF>();
-            services.AddScoped<IRepository<Patient>, PatientRepositoryEF>();
+            services.AddScoped<IDoctorRepository, DoctorRepositoryEF>();
+            services.AddScoped<IPatientRepository, PatientRepositoryEF>();
 
             services.AddScoped<IDoctorService, DoctorService>();
             services.AddScoped<IPatientService, PatientService>();
@@ -64,19 +64,23 @@ namespace HospitalManagement.ConsoleApp
                     Console.WriteLine("\n========================================\n");
                     Console.WriteLine("1. Add Doctor");
                     Console.WriteLine("2. List Doctors");
-                    Console.WriteLine("3. Add Patient");
-                    Console.WriteLine("4. List Patients");
-                    Console.WriteLine("5. Find Patient");
-                    Console.WriteLine("6. Edit Patient");
-                    Console.WriteLine("7. Delete Patient");
-                    Console.WriteLine("8. Add Doctor in DB");
-                    Console.WriteLine("9. List Doctors in DB");
-                    Console.WriteLine("10. Add Patient in DB");
-                    Console.WriteLine("11. List Patients in DB");
-                    Console.WriteLine("12. Find Patient in DB");
-                    Console.WriteLine("13. Edit Patient in DB");
-                    Console.WriteLine("14. Delete Patient in DB");
-                    Console.WriteLine("15. Exit");
+                    Console.WriteLine("3. List Doctors by Fee");
+                    Console.WriteLine("4. Add Patient");
+                    Console.WriteLine("5. List Patients");
+                    Console.WriteLine("6. Find Patient by name");
+                    Console.WriteLine("7. List Patients by Doctor id");
+                    Console.WriteLine("8. Edit Patient");
+                    Console.WriteLine("9. Delete Patient");
+                    Console.WriteLine("10. Add Doctor in DB");
+                    Console.WriteLine("11. List Doctors in DB");
+                    Console.WriteLine("12. List Doctors by fee in DB");
+                    Console.WriteLine("13. Add Patient in DB");
+                    Console.WriteLine("14. List Patients in DB");
+                    Console.WriteLine("15. Find Patient by name in DB");
+                    Console.WriteLine("16. Find Patient by Doctor Id in DB");
+                    Console.WriteLine("17. Edit Patient in DB");
+                    Console.WriteLine("18. Delete Patient in DB");
+                    Console.WriteLine("19. Exit");
                     Console.Write("Choice: ");
                     int choice = int.Parse(Console.ReadLine());
                     switch (choice)
@@ -88,42 +92,54 @@ namespace HospitalManagement.ConsoleApp
                             ListDoctors(doctorServiceMemory);
                             break;
                         case 3:
-                            AddPatient(patientServiceMemory);
+                            ListDoctorsByFee(doctorServiceMemory);
                             break;
                         case 4:
-                            ListPatients(patientServiceMemory);
+                            AddPatient(patientServiceMemory);
                             break;
                         case 5:
-                            FindByName(patientServiceMemory);
+                            ListPatients(patientServiceMemory);
                             break;
                         case 6:
-                            EditPatient(patientServiceMemory);
+                            FindByName(patientServiceMemory);
                             break;
                         case 7:
-                            DeletePatient(patientServiceMemory);
+                            GetPatientByDoctor(patientServiceMemory);
                             break;
                         case 8:
-                            AddDoctor(doctorService);
+                            EditPatient(patientServiceMemory);
                             break;
                         case 9:
-                            ListDoctors(doctorService);
+                            DeletePatient(patientServiceMemory);
                             break;
                         case 10:
-                            AddPatient(patientService);
+                            AddDoctor(doctorService);
                             break;
                         case 11:
-                            ListPatients(patientService);
+                            ListDoctors(doctorService);
                             break;
                         case 12:
-                            FindByName(patientService);
+                            ListDoctorsByFee(doctorService);
                             break;
                         case 13:
-                            EditPatient(patientService);
+                            AddPatient(patientService);
                             break;
                         case 14:
-                            DeletePatient(patientService);
+                            ListPatients(patientService);
                             break;
                         case 15:
+                            FindByName(patientService);
+                            break;
+                        case 16:
+                            GetPatientByDoctor(patientService);
+                            break;
+                        case 17:
+                            EditPatient(patientService);
+                            break;
+                        case 18:
+                            DeletePatient(patientService);
+                            break;
+                        case 19:
                             endLoop = true;
                             break;
                         default:
@@ -161,6 +177,17 @@ namespace HospitalManagement.ConsoleApp
         {
             Console.WriteLine("\n\n");
             List<Doctor> doctors = doctorService.GetDoctors();
+            foreach (Doctor i in doctors)
+            {
+                Console.WriteLine($"Doctor Id: {i.DoctorId}\nDoctor Name: {i.Name}\nSpecialzation: {i.Specialization}\nConsultation Fee: {i.ConsultationFee:F2}");
+                Console.WriteLine();
+            }
+        }
+
+        public static void ListDoctorsByFee(IDoctorService doctorService)
+        {
+            Console.WriteLine("\n\n");
+            List<Doctor> doctors = doctorService.SortDoctorsByFee();
             foreach (Doctor i in doctors)
             {
                 Console.WriteLine($"Doctor Id: {i.DoctorId}\nDoctor Name: {i.Name}\nSpecialzation: {i.Specialization}\nConsultation Fee: {i.ConsultationFee:F2}");
@@ -221,16 +248,36 @@ namespace HospitalManagement.ConsoleApp
             Console.WriteLine("\n\n");
             Console.Write("Enter Patient Name: ");
             string name = Console.ReadLine();
-            Patient foundPatient = patientService.FindPatientByName(name);
-            Console.WriteLine("\n\n");
-            Console.WriteLine($"Patient Id: {foundPatient.PatientId}");
-            Console.WriteLine($"Patient Name: {foundPatient.Name}");
-            Console.WriteLine($"Patient Age: {foundPatient.Age}");
-            Console.WriteLine($"Patient Condition: {foundPatient.Condition}");
-            Console.WriteLine($"Appointment Date: {foundPatient.AppointmentDate}");
-            Console.WriteLine($"Doctor ID: {foundPatient.DoctorId}");
+            List<Patient> foundPatients = patientService.FindPatientByName(name);
+            foreach (Patient i in foundPatients)
+            {
+                Console.WriteLine("\n\n");
+                Console.WriteLine($"Patient Id: {i.PatientId}");
+                Console.WriteLine($"Patient Name: {i.Name}");
+                Console.WriteLine($"Patient Age: {i.Age}");
+                Console.WriteLine($"Patient Condition: {i.Condition}");
+                Console.WriteLine($"Appointment Date: {i.AppointmentDate}");
+                Console.WriteLine($"Doctor ID: {i.DoctorId}");
+            }
         }
 
+        public static void GetPatientByDoctor(IPatientService patientService)
+        {
+            Console.WriteLine("\n\n");
+            Console.Write("Enter Doctor Id: ");
+            int doctorId = int.Parse(Console.ReadLine());
+            List<Patient> foundPatients = patientService.GetPatientByDoctorId(doctorId);
+            foreach (Patient i in foundPatients)
+            {
+                Console.WriteLine("\n\n");
+                Console.WriteLine($"Patient Id: {i.PatientId}");
+                Console.WriteLine($"Patient Name: {i.Name}");
+                Console.WriteLine($"Patient Age: {i.Age}");
+                Console.WriteLine($"Patient Condition: {i.Condition}");
+                Console.WriteLine($"Appointment Date: {i.AppointmentDate}");
+                Console.WriteLine($"Doctor ID: {i.DoctorId}");
+            }
+        }
         public static void EditPatient(IPatientService patientService)
         {
             Console.WriteLine("\n\n");

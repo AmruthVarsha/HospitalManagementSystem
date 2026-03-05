@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HospitalManagement.Infrastructure.Repositories
 {
-    public class DoctorRepositoryEF : IRepository<Doctor>
+    public class DoctorRepositoryEF : IDoctorRepository
     {
         private readonly AppDbContext _context;
 
@@ -24,10 +24,7 @@ namespace HospitalManagement.Infrastructure.Repositories
             _context.SaveChanges();
         }
         public List<Doctor> GetAll() {
-            List<Doctor> result = _context.Doctors.ToList();
-            if (result.Count == 0) {
-                return null;
-            }
+            List<Doctor> result = _context.Doctors.Include(d => d.Patients).ToList();
             return result;
         }
         public Doctor GetById(int id) {
@@ -42,5 +39,12 @@ namespace HospitalManagement.Infrastructure.Repositories
             _context.Doctors.Remove(doctor);
             _context.SaveChanges();
         }
+
+        public List<Doctor> SortByFee()
+        {
+            return _context.Doctors.OrderBy(d => d.ConsultationFee).ToList();
+        }
+
+       
     }
 }

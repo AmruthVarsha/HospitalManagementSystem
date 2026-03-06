@@ -144,3 +144,9 @@ D:\.NET\Project\HospitalManagementSolution\HospitalManagement.MVCApp\obj\Debug\n
 D:\.NET\Project\HospitalManagementSolution\HospitalManagement.MVCApp\obj\Debug\net9.0\Hospital.EF122274.Up2Date
 D:\.NET\Project\HospitalManagementSolution\HospitalManagement.MVCApp\obj\Debug\net9.0\HospitalManagement.MVCApp.genruntimeconfig.cache
 D:\.NET\Project\HospitalManagementSolution\HospitalManagement.MVCApp\obj\Debug\net9.0\ref\HospitalManagement.MVCApp.dll
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.MVCApp\obj\Debug\net9.0\compressed\kqvzmzr8ch-{0}-h14cdt2yh2-h14cdt2yh2.gz
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.MVCApp\obj\Debug\net9.0\compressed\kuo4su3djs-{0}-jkax9e7770-jkax9e7770.gz
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.MVCApp\obj\Debug\net9.0\compressed\nqh23e7ebe-{0}-0w3m15m3ui-0w3m15m3ui.gz
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.MVCApp\obj\Debug\net9.0\compressed\szo3i0obn3-{0}-mt6n0ac3bz-mt6n0ac3bz.gz
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.MVCApp\obj\Debug\net9.0\compressed\xlgow9fsqk-{0}-79k6x47uyc-79k6x47uyc.gz
+D:\.NET\Project\HospitalManagementSolution\HospitalManagement.MVCApp\obj\Debug\net9.0\compressed\i9g7ezq0x6-{0}-d8acldn7jy-d8acldn7jy.gz

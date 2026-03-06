@@ -13,6 +13,11 @@ namespace HospitalManagement.MVCApp.Controllers
             _logger = logger;
         }
 
+        public IActionResult Add(int a,int b)
+        {
+            return Content($"The Sum of {a} and {b} is {a + b}");
+        }
+
         public IActionResult Index()
         {
             return View();

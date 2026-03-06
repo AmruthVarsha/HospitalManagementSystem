@@ -16,9 +16,9 @@ namespace HospitalManagement.Application.Services
         //private DoctorRepositoryMemory DoctorRepository = new DoctorRepositoryMemory();
 
         private readonly IPatientRepository PatientRepository;
-        private readonly IRepository<Doctor> DoctorRepository;
+        private readonly IDoctorRepository DoctorRepository;
 
-        public PatientService(IPatientRepository patientRepository, IRepository<Doctor> doctorRepository)
+        public PatientService(IPatientRepository patientRepository, IDoctorRepository doctorRepository)
         {
             PatientRepository = patientRepository;
             DoctorRepository = doctorRepository;

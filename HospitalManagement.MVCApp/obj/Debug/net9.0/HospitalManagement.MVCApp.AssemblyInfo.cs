@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HospitalManagement.MVCApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28dc686e2ed99afebe6e9e3c47199009a4ec2510")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23ef1177e2a625a27c9e3596337e403f4c959634")]
 [assembly: System.Reflection.AssemblyProductAttribute("HospitalManagement.MVCApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HospitalManagement.MVCApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
